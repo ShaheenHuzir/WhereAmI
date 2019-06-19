@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../public/styles/css/bootstrap/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/styles/css/customsheet/style.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <!---main wrapper-->
+            <div class="row d-flex justify-content-center">
+                <!---main-row-->
+                <div class="col-sm-12">
+                  <header class="text-center">
+                    <h1>Find the ip!</h1>
+                  </header>
+                </div>  
+                <div class="container">
+                    <div class="row d-flex no-gutter justify-content-center">
+                            <section class="hero">
+                                    <div class="col-sm-12">
+                                      <div id="entry text-center">
+                                                    <form id="ip-add">
+                                                        <label>
+                                                            Enter Your IP</label><input type="text" name="ipAdd" required pattern="^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$">
+                                                
+                                                        <button type="submit" class="button btn-success  m-2" id="submit-button">Submit</button>
+                                                    </form>
+                                        </div>            
+                                        </div>
+                                        <section class="checks">
+                                            <label><span class="checkboxtext">City</span>
+                                                <input type="checkbox" id="cityCheck" checked />
+                                            </label>
+                                            <label><span class="checkboxtext">Country</span>
+                                                <input type="checkbox" id="countryCheck" checked>
+                                            </label>
+                                            <label><span class="checkboxtext">Currency</span>
+                                                <input type="checkbox" id="currencyCheck" checked>
+                                            </label>
+                                            <label><span class="checkboxtext">Postal Code</span>
+                                                <input type="checkbox" id="zipCheck" checked>
+                                            </label>
+                                            <label><span class="checkboxtext">Time Zone</span>
+                                                <input type="checkbox" id="timeZoneCheck" checked>
+                                            </label>
+                                        </section>
+                                </section>
+              
+                    </div>
+                </div>      
+                 <div class="container">
+                     <div class="row d-flex justify-content-center">
+                         <div class="col-sm-12">
+                            
+                        </div>
+                            
+                     </div>
+                 </div>                 
+            <div class="col-sm-12"> 
+                    <section id="disp" class="display">
+                      
+                        <div id="country" class="inner-display">
+                        </div>
+                        <div id="locale" class="inner-display">
+                        </div>
+                        <div id="currency" class="inner-display">
+                        </div>
+                        <div id="zip" class="inner-display">
+                        </div>
+                        <div id="time-zone" class="inner-display">
+                        </div>
+                    </section>
+                </div>   
+                        </div>
+                    </div>
+        
+
+
+                    <footer>
+
+                    </footer>
+                    <!---scripts-->
+                    <script src="../public/scripts/main.js"></script>
+                    
+                    <!--end of main row-->
+                </div>
+                <!---end of main container-->
+            </div>
+    </main>
+</body>
+
+</html>

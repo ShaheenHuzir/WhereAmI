@@ -1,0 +1,74 @@
+
+/*font*/
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/oswald-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Oswald Regular'), local('Oswald-Regular'),
+         url('/public/styles/fonts/oswald-v17-latin-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('/public/styles/fonts/oswald-v17-latin-regular.woff') format('woff2'), /* Super Modern Browsers */
+         url('/public/styles/fonts/oswald-v17-latin-regular.woff2') format('woff'), /* Modern Browsers */
+         url('/public/styles/fonts/Oswald-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/public/styles/fonts/oswald-v17-latin-regular.svg') format('svg'); /* Legacy iOS */
+  }
+
+body{
+    font-family:'Oswald',monospace;
+    font-size: 16px;
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+    
+}
+
+h1{
+    font-size: 5rem;
+    -webkit-text-stroke: 2px black;
+}
+
+label{
+    margin: 0.8rem;
+    font-size: 1.6rem;
+}
+.container-fluid{
+    text-align: center;
+    margin: auto;
+    margin-bottom: -2rem;
+    max-width: 960px;
+}
+
+.hero{
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.checks{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input[type="checkbox"]{
+   margin: 0.2rem;
+   transform: scale(1.5);
+}
+
+.display{
+     font-size: 2rem;
+     display:flex;
+     align-content: center;
+     justify-content:center;
+     flex-wrap: wrap;
+     align-items: center; 
+     
+}
+
+.inner-display{
+    display: flex;
+    justify-content: flex-start;
+    max-width: calc(960px/6);
+    max-height: 6rem;
+    margin: 0.2rem;
+    padding:0.2rem;
+}
